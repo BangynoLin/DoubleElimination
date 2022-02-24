@@ -509,7 +509,7 @@ function drawSvg(arr,dx,dy,fontSize,strokeW)
 		text .setAttributeNS(null,"fill","darksalmon");
 		svg .appendChild(text);
 	}
-	lod.sort(function(a,b){a.idx-b.idx});
+	lod.sort(function(a,b){return a.idx-b.idx});
 	for(i=0;i<lod.length;++i)
 	{
 		text=document .createElementNS(svgns,"text");
